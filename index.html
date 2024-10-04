@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>停车位预定</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- 停车位预定表单 -->
+        <div class="container">
+            <h1>停车位预定</h1>
+            <form id="parkingForm">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="position">你的职位：</label>
+                <input type="text" id="position" name="position" required>
+
+                <label for="position">DC/QQ 账号: </label>
+                <input type="text" id="account" name="account" required>
+
+                <label for="position">VTC名称: </label>
+                <input type="text" id="VTC" name="VTC" required>
+    
+                <label for="parkingSpot">选择停车位：</label>
+                <select id="parkingSpot" name="parkingSpot" required>
+                    <option value="1">停车位 1</option>
+                    <option value="2">停车位 2</option>
+                    <option value="3">停车位 3</option>
+                    <option value="4">停车位 4</option>
+                    <option value="5">停车位 5</option>
+                    <option value="6">停车位 6</option>
+                    <option value="7">停车位 7</option>
+                    <option value="8">停车位 8</option>
+                    <option value="9">停车位 9</option>
+                    <option value="10">停车位 10</option>
+                    <option value="11">停车位 11</option>
+                    <option value="12">停车位 12</option>
+                    <option value="13">停车位 13</option>
+                    <option value="14">停车位 14</option>
+                    <option value="15">停车位 15</option>
+                    <option value="16">停车位 16</option>
+                    <option value="17">停车位 17</option>
+                    <option value="18">停车位 18</option>
+                    <option value="19">停车位 19</option>
+                    <option value="20">停车位 20</option>
+                    <option value="21">停车位 21</option>
+                    <option value="22">停车位 22</option>
+                    <option value="23">停车位 23</option>
+                    <option value="24">停车位 24</option>
+                    <option value="25">停车位 25</option>
+                    <option value="26">停车位 26</option>
+                </select>
+    
+                <label for="attendees">预计出席人数：</label>
+                <select id="attendees" name="attendees" required>
+                    <option value="5">5</option>
+                    <option value="5-10">5-10</option>
+                    <option value="10-20">10-20</option>
+                    <option value="20-30">20-30</option>
+                    <option value="30-40">30-40</option>
+                    <option value="40+">40+</option>
+                </select>
+    
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    
+        <!-- 轮播图部分 -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <button class="prev" onclick="showPrevImage()">&#10094;</button> <!-- 前一张按钮 -->
+                <div class="carousel-images">
+                    <img src="parking1.jpg" alt="停车位" class="active">
+                    <img src="parking2.jpg" alt="停车位">
+                </div>
+                <button class="next" onclick="showNextImage()">&#10095;</button> <!-- 后一张按钮 -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

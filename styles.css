@@ -1,0 +1,74 @@
+/* 主容器，使用flex布局使其水平和垂直居中 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 主容器：表单和轮播图并排，且整体居中 */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1500px; /* 控制整体宽度 */
+    width: 100%;
+}
+
+/* 表单容器，保持一致的样式 */
+.container {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* 轮播图容器，确保与表单在一行显示 */
+.carousel-container {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+/* 表单和输入框样式保持一致 */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* 提交按钮样式 */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
